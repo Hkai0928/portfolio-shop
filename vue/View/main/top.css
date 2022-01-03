@@ -1,0 +1,70 @@
+/*------------------------
+  main
+-------------------------*/
+.contentTitle {
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: solid 2px;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.popularList {
+  display: flex;
+  justify-content: center;
+}
+
+.popularList img {
+  width: 200px;
+  height: 250px;
+}
+
+.popularItem {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*------------------------
+  carousel
+-------------------------*/
+.VueCarousel{
+  height: 420px;
+  padding: 0 60px;
+}
+.VueCarousel-wrapper, .VueCarousel-inner, .VueCarousel-slide{
+  height: 100% !important;
+}
+
+.VueCarousel-slide .slider-inner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-inner img {
+  cursor: pointer;
+  height: 350px;
+  width: 900px;
+}
+
+.VueCarousel-navigation-button {
+  top: 41% !important;
+  color: #fff !important;
+  background-color: #C0C0C0 !important;
+  opacity: 0.5;
+}
+
+.VueCarousel-navigation-next {
+  right: 40px !important;
+  padding: 8px 0 8px 8px !important;
+  font-size: 4rem;
+}
+
+.VueCarousel-navigation-prev {
+  left: 40px !important;
+  padding: 8px 8px 8px 0 !important;
+  font-size: 4rem;
+}

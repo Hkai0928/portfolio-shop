@@ -1,0 +1,80 @@
+body {
+  min-width: 1400px;
+  background: #333333;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.click :hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.clickNone {
+  pointer-events: none;
+}
+
+/*------------------------
+  header
+-------------------------*/
+#header {
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  padding: 0px 150px;
+}
+
+#header img {
+  width: 36px;
+  height: 36px;
+}
+
+#header a {
+  display: block;
+  padding: 0 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  float: left;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.icon :hover {
+  opacity: 0.5;
+}
+
+.title {
+  margin: 50px 30px 50px 0px;
+}
+
+.colorBlack {
+  color: black;
+}
+
+.headerIcons {
+  margin: 0 0 0 auto;
+}
+
+
+/*------------------------
+  main
+-------------------------*/
+main {
+  padding: 20px 40px;
+  margin: 20px 150px;
+}
+
+main img {
+  background-color: #ccc;
+  object-fit: contain;
+}
+
+.contentTitle {
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: solid 2px;
+}

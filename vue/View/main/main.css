@@ -1,0 +1,117 @@
+/*------------------------
+  main
+-------------------------*/
+main {
+  /* margin: 0px 50px; */
+}
+
+.pageTitle {
+  font-size: 24px;
+  border-bottom: 2px solid;
+}
+
+.search {
+  display: block;
+}
+
+.search  {
+  display: inline-block;
+}
+
+.searchBox {
+
+}
+
+.search .target {
+  display: inline-block;
+}
+
+.search .target label {
+  margin-right: 15px;
+}
+
+.search .sort {
+  display: inline-block;
+}
+
+.search .sorting {
+  color:black;
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+  border-color: white;
+  border-bottom: solid 1px;
+  cursor: pointer;
+}
+
+.item .image {
+  position: relative;
+  text-align: center;
+}
+
+.item .image:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.item .image img {
+  width: 150px;
+  height: 150px;
+}
+
+.item .detail {
+  width: 100%;
+  margin: 20px 0 0 50px;
+}
+
+.item .detail .name {
+  font-size: 20px;
+}
+
+.item .detail:hover .name {
+  text-decoration: underline;
+  color: #FF9933;
+}
+
+.item .price {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.item .price span {
+  font-size: 180%;
+}
+
+.item .shipping-fee {
+  display: inline-block;
+  background: #f7cd12;
+  color: #000;
+}
+
+.item .shipping-fee.none {
+  background: #bf0000;
+  color: #fff;
+}
+
+.item .stockBox {
+  display: inline-block;
+}
+
+.item .stock {
+  color: #0A0;
+}
+
+.item .stockNone {
+  color: red;
+}
+
+/*------------------------
+  footer
+-------------------------*/

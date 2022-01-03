@@ -1,0 +1,89 @@
+/*------------------------
+  main
+-------------------------*/
+
+main {
+  display:  flex;
+}
+
+table {
+  width: 100%;
+  margin: 12px 0;
+}
+
+th,td {
+  text-align: center;
+}
+
+.listTable img {
+  width: 100px;
+  height: 100px;
+}
+
+.detailTable img {
+  width: 300px;
+  height: 300px;
+}
+
+#header a {
+  text-decoration: none;
+  color: white;
+}
+
+#header img {
+  width: 50%;
+  height: 50%;
+}
+
+.logoutIcon {
+  margin: 0 0 0 auto;
+}
+
+.mainPanel {
+  margin: 24px;
+  width: 100%;
+}
+
+/*------------------------
+  side_navi
+-------------------------*/
+
+#tab {
+  display: inline-block;
+  margin-right: 40px;
+  min-width: 200px;
+}
+
+.sideNavi {
+  padding: 10px;
+  border: 1px solid;
+}
+
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  padding-bottom: 12px;
+}
+
+ul li ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+ul li ul li:hover{
+  cursor: pointer;
+  color: #00FFFF;
+  text-decoration: underline;
+}
+
+/*------------------------
+  paginate
+-------------------------*/
+#app .pagination {
+  display: flex;
+	justify-content: center;
+}

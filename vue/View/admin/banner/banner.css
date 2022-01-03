@@ -1,0 +1,24 @@
+/*------------------------
+  main
+-------------------------*/
+#app {
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.bannerImg img {
+  height: 280px;
+  width: 720px;
+}
+
+.proImg img {
+  height: 100px;
+  width: 100px;
+}
+
+.bannerList {
+  padding: 20px 0 20px 0;
+  border-bottom: 3px solid;
+}
