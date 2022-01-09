@@ -20,7 +20,7 @@
               {{ category.name }}
             </option>
           </select>
-          <div class="colorBlack"><input type="text" v-model="searchText"></div>
+          <div class="colorBlack"><input type="text" v-model="searchText" placeholder="キーワードで探す"></div>
           <input type="button" @click="search" class="colorBlack" name="" value="検索">
         </div>
         <div id="container">
