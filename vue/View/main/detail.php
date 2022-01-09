@@ -6,42 +6,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css">
     <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="detail.css">
   </head>
   <body>
     <?php include('./header.php') ?>
     <main id="app">
-      <div v-for="product in resultKey">
-        <table border="1">
-          <tr>
-            <th>商品ID</th>
-            <td>{{ product.id }}</td>
-          </tr>
-          <tr>
-            <th>商品名</th>
-            <td>{{ product.name }}</td>
-          </tr>
-          <tr>
-            <th>商品画像</th>
-            <td><img v-bind:src="product.image" alt=""></td>
-          </tr>
-          <tr>
-            <th>価格</th>
-            <td>{{ product.price | number_format }}</td>
-          </tr>
-          <tr>
-            <th>送料</th>
-            <td>{{ product.postage | number_format }}</td>
-          </tr>
-          <tr>
-            <th>カテゴリー</th>
-            <td>{{ product.category }}</td>
-          </tr>
-          <tr>
-            <th>在庫</th>
-            <td>{{ product.stock }}</td>
-          </tr>
-        </table>
+      <div class="detailPanel">
+        <div class="item" v-for="product in resultKey">
+          <div class="image">
+            <img v-bind:src="product.image" alt="">
+          </div>
+          <div class="detail">
+            <div class="name">{{ product.name }}</div>
+            <div class="price"><span>{{ product.price | number_format }}</span>円（税込）</div>
+            <template v-if="product.postage == 0">
+              <div class="shipping-fee none">送料無料</div>
+            </template>
+            <template v-else>
+              <div class="shipping-fee">+送料{{ product.postage | number_format }}円</div>
+            </template>
+            <template v-if="product.stock > 0">
+              <div class="stock">在庫あり</div>
+            </template>
+            <template v-else>
+              <div class="stockNone">在庫なし</div>
+            </template>
+          </div>
+        </div>
+        <div class="addCart">
+          <form class="" action="cart.php" method="post">
+            <input type="button" class="colorBlack" name="" value="ショッピングカートに入れる">
+          </form>
+        </div>
       </div>
     </main>
     <footer></footer>
