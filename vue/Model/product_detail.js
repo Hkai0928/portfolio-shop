@@ -59,7 +59,4 @@ var app = new Vue({
       return newPro
     }
   },
-  methods: {
-
-  }
 });

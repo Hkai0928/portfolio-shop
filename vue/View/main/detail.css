@@ -4,7 +4,7 @@
 
 .item {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin-bottom: 30px;
   padding-bottom: 12px;
   border-color: white;
@@ -50,4 +50,17 @@
 
 .item .stockNone {
   color: red;
+}
+
+.addCart {
+  height: 100%;
+  border: solid 1px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.addCartBtn {
+  background-color: #bf0000;
+  padding: 10px;
+
 }
