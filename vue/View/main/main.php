@@ -61,7 +61,7 @@
                     </template>
                     <template v-else>
                       <div class="shipping-fee">+送料{{ product.postage | number_format }}円</div>
-                    </template class="stockBox">
+                    </template>
                     <template v-if="product.stock > 0">
                       <div class="stock">在庫あり</div>
                     </template>
@@ -101,5 +101,3 @@
 <script src="https://unpkg.com/vuejs-paginate@2.1.0"></script>
 <script src="../../ViewModel/vue.js"></script>
 <script src="../../Model/main.js"></script>
-<script>
-</script>
