@@ -1,0 +1,95 @@
+/*------------------------
+  cart_add
+-------------------------*/
+
+.addPanel {
+  display: flex;
+}
+
+.addProduct {
+  width: 70%;
+}
+
+.addMsg {
+  color: #0A0;
+  margin-bottom: 20px;
+}
+
+.navi {
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  border: solid 1px;
+  margin-top: 24px;
+  padding: 30px;
+}
+
+.navi button {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/*------------------------
+  cart
+-------------------------*/
+.cartList {
+  display: flex;
+}
+
+.list {
+  width: 75%;
+}
+
+.item {
+  display: flex;
+  width: 80%;
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+  border-color: white;
+}
+
+.item .image img {
+  width: 200px;
+  height: 200px;
+}
+
+.item .detail {
+  width: 100%;
+  margin: 20px 0 0 50px;
+}
+
+.item .name {
+  font-size: 24px;
+}
+
+.item .price {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.item .price span {
+  font-size: 180%;
+}
+
+.item .shipping-fee {
+  display: inline-block;
+  background: #f7cd12;
+  color: #000;
+}
+
+.item .shipping-fee.none {
+  background: #bf0000;
+  color: #fff;
+}
+
+.buyBtn {
+  background-color: #bf0000;
+}
+
+.total .buyBtn {
+  width: 100%;
+}
+
+.borderLine {
+  border-bottom: solid 1px;
+}
