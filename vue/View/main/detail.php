@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="addCart">
-          <form class="" action="../../api/addCart.php" method="post">
+          <form class="" action="../../api/cartAdd.php" method="post">
             <input type="hidden" name="product_id" value=<?= $_GET['product'] ?>>
             <input type="submit" class="addCartBtn" name="" value="ショッピングカートに入れる">
           </form>
