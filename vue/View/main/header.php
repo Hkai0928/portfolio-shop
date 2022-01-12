@@ -19,7 +19,7 @@
       </a>
     </div>
     <div class="icon">
-      <a href="#">
+      <a href="./cart.php">
         <img src="../../assets/icon/icon_cart.png">
         <br>カート
       </a>
