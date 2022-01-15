@@ -1,0 +1,17 @@
+.list {
+  padding-right: 20px;
+}
+
+.contentInfo {
+  margin-bottom: 20px;
+}
+
+.memberInfo table {
+  width: 100%;
+}
+
+.memberInfo div {
+  margin-bottom: 10px;
+  border-color: white;
+  border-bottom: solid 1px;
+}

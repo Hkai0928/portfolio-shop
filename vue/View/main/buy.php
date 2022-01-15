@@ -12,18 +12,28 @@
   <body>
     <?php include('./header.php') ?>
     <main id="app">
+      <div class="contentTitle">注文確定</div>
+      <div class="contentInfo">注文情報を確認し、注文を確定してください。</div>
       <div class="cartList">
         <!-- カート内リスト -->
         <div class="list">
-          <div class="contentTitle">お届け先</div>
-          <div v-for="member in members">
-            <div>名前</div>
-            <div>{{ member.name }}</div>
-            <div>住所</div>
-            <div>{{ member.address }}</div>
+          <div class="contentTitle">お届け先情報</div>
+          <div class="contentInfo">
+            <div class="memberInfo" v-for="member in members">
+              <table>
+                <tr>
+                  <td>名前</td>
+                  <td>{{ member.name }}</td>
+                </tr>
+                <tr>
+                  <td>住所</td>
+                  <td>{{ member.address }}</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="contentTitle">お支払方法</div>
-          <div class="">
+          <div class="contentInfo">
             着払いのみ
           </div>
           <div class="contentTitle">ショッピングカート</div>
