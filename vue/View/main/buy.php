@@ -57,19 +57,19 @@
         <div class="total">
           <table>
             <tr>
-              <td>商品小計（{{ count }}）点</td>
-              <td>￥ {{ totalPro | number_format }}</td>
+              <td class="tdL">商品小計（{{ count }}）点</td>
+              <td class="tdR">￥ {{ totalPro | number_format }}</td>
             </tr>
             <tr>
-              <td>送料</td>
-              <td>￥ {{ totalPos | number_format }}</td>
+              <td class="tdL">送料</td>
+              <td class="tdR">￥ {{ totalPos | number_format }}</td>
             </tr>
           </table>
           <div class="borderLine"></div>
           <table>
             <tr>
-              <td>合計金額</td>
-              <td>￥ {{ total | number_format }}</td>
+              <td class="tdL">合計金額</td>
+              <td class="tdR">￥ {{ total | number_format }}</td>
             </tr>
           </table>
           <button class="buyBtn" onclick="location.href='./buy_done.php'">注文確定</button>

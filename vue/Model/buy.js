@@ -60,6 +60,8 @@ var app = new Vue({
       for (var i=0; i<this.carts.length; i++) {
         //  imageのパス設定
         this.carts[i].image = "../../assets/product/" + this.carts[i].image;
+
+        //  合計金額集計
         this.totalPro += this.carts[i].price;
         this.totalPos += this.carts[i].postage;
       }

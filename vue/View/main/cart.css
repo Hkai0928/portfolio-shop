@@ -40,6 +40,10 @@
   width: 75%;
 }
 
+.noItem {
+  margin-bottom: 10px;
+}
+
 .item {
   display: flex;
   width: 80%;
@@ -85,12 +89,44 @@
 
 .buyBtn {
   background-color: #bf0000;
+  padding: 10px;
 }
 
 .total .buyBtn {
   width: 100%;
 }
 
+.deleteBtn {
+  display: flex;
+  align-items: flex-end;
+}
+
 .borderLine {
   border-bottom: solid 1px;
+}
+
+.total {
+  height: 100%;
+  padding: 20px;
+  border: solid 1px;
+}
+
+.total button {
+  margin-top: 20px;
+}
+
+.total table {
+  width: 100%;
+}
+
+.total td {
+  padding: 10px;
+}
+
+.tdR {
+  text-align: right;
+}
+
+.tdL {
+    text-align: left;
 }
