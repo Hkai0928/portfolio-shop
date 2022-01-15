@@ -16,6 +16,7 @@
       <?php include('./../side_navi.php') ?>
       <!-- mainPanel -->
       <div id="app" class="mainPanel">
+        <div class="contentTitle">商品一覧</div>
         <input type="button" class="colorBlack" onclick="location.href='./pro_add.php'" value="商品追加">
         <table class=listTable border="1">
           <tr>

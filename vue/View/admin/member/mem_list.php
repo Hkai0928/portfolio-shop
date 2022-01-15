@@ -16,6 +16,7 @@
       <?php include('./../side_navi.php') ?>
       <!-- mainPanel -->
       <div id="app" class="mainPanel">
+        <div class="contentTitle">一般会員一覧</div>
         <input type="button" class="colorBlack" onclick="location.href='./mem_add.php'" value="会員追加">
         <table class=listTable border="1">
           <tr>
