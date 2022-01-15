@@ -2,7 +2,26 @@
   margin: 20px 0px;
 }
 
+.info {
+  margin-bottom: 10px;
+}
+
 .item {
+  display: flex;
   border: 1px solid;
   margin: 8px 0px;
+}
+
+.list_icon {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.catInfo {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
 }

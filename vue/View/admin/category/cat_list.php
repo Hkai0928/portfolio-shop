@@ -16,6 +16,10 @@
       <!-- サイドナビ -->
       <?php include('./../side_navi.php') ?>
       <div id="app" class="mainPanel">
+        <div class="contentTitle">カテゴリー一覧</div>
+        <div class="info">
+          ドラックアンドドロップでカテゴリーの順番入れ替え後更新でカテゴリーの順番を入れ替え可能です。
+        </div>
         <form class="" action="./cat_add.php" method="post">
           <input type="hidden" name="defOrder" v-bind:value="defOrder">
           <input type="submit" class="colorBlack" value="カテゴリー追加">
@@ -24,13 +28,20 @@
         <div class="category">
           <draggable v-model="categorys" @start="start" @end="end">
             <div class="item" v-for="category in categorys" :key="category.id">
-              {{category.name}}
-              <form class="" method="post">
-                <input type="hidden" name="id" v-bind:value="category.id">
-                <input type="hidden" name="name" v-bind:value="category.name">
-                <input type="submit" formaction="./cat_edit.php" class="colorBlack" value="編集">
-                <input type="submit" formaction="./cat_delete.php" class="colorBlack" value="削除">
-              </form>
+              <div class="list_icon">
+                <img src="../../../assets/icon/icon_listUpDown.png">
+              </div>
+              <div class="catInfo">
+                <div class="catName">
+                  {{category.name}}
+                </div>
+                <form class="" method="post">
+                  <input type="hidden" name="id" v-bind:value="category.id">
+                  <input type="hidden" name="name" v-bind:value="category.name">
+                  <input type="submit" formaction="./cat_edit.php" class="colorBlack" value="編集">
+                  <input type="submit" formaction="./cat_delete.php" class="colorBlack" value="削除">
+                </form>
+              </div>
             </div>
           </draggable>
         </div>
