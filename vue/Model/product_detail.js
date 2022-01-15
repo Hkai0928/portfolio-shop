@@ -10,6 +10,10 @@ var app = new Vue({
     return  {
       //  商品リスト
       products: [],
+      //  カートリスト
+      carts: [],
+      //  カートに追加済みかフラグ
+      cartAddFlg: 0,
       //  商品ID
       detailId: 0,
       // エラーの有無
@@ -21,6 +25,12 @@ var app = new Vue({
     }
   },
   created: function() {
+    var url = new URL(window.location.href);
+    var params = url.searchParams;
+    if(params.get('product') != null) {
+      this.detailId = params.get('product');
+    }
+
     //商品リスト取得
     var url = 'http://localhost/vue/api/products.php'
     // 非同期通信でJSONを読み込む
@@ -37,12 +47,27 @@ var app = new Vue({
       this.message = '商品リストの読み込みに失敗しました。';
     }.bind(this));
 
-    //  TOPからのカテゴリー選択遷移
-    var url = new URL(window.location.href);
-    var params = url.searchParams;
-    if(params.get('product') != null) {
-      this.detailId = params.get('product');
-    }
+    //カートリスト取得
+    var url = 'http://localhost/vue/api/cartList.php'
+    // 非同期通信でJSONを読み込む
+    $.ajax({
+      url : url,        // 通信先URL
+      type: 'GET',      // 使用するHTTPメソッド
+      dataType: 'json',
+    })
+    .done(function(data, textStatus, jqXHR) {
+      this.carts = data;
+      for (var i=0; i<this.carts.length; i++) {
+        if(this.carts[i].id == this.detailId) {
+          this.cartAddFlg = 1;
+        }
+      }
+      this.total = this.totalPro + this.totalPos;
+    }.bind(this))
+    .fail(function(jqXHR, textStatus, errorThrown) {
+      this.isError = true;
+      this.message = '商品リストの読み込みに失敗しました。';
+    }.bind(this));
 
   },
   computed: {
