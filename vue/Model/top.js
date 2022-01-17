@@ -23,7 +23,7 @@ var app = new Vue({
   },
   created: function() {
     //商品リスト取得
-    var url = 'http://localhost/vue/api/products.php'
+    var url = 'https://hk-portfolio-shop.com/shop/vue/api/products.php'
     // 非同期通信でJSONを読み込む
     $.ajax({
       url : url,        // 通信先URL
@@ -44,7 +44,7 @@ var app = new Vue({
     }.bind(this));
 
     //カテゴリーリスト取得
-    var url = 'http://localhost/vue/api/category.php'
+    var url = 'https://hk-portfolio-shop.com/shop/vue/api/category.php'
     // 非同期通信でJSONを読み込む
     $.ajax({
       url : url,        // 通信先URL
@@ -61,7 +61,7 @@ var app = new Vue({
     }.bind(this));
 
     //バナーリスト取得
-    var url = 'http://localhost/vue/api/banner.php'
+    var url = 'https://hk-portfolio-shop.com/shop/vue/api/banner.php'
     // 非同期通信でJSONを読み込む
     $.ajax({
       url : url,        // 通信先URL

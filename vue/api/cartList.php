@@ -4,9 +4,9 @@ session_start();
 try {
 
   //  DB接続
-  $dsn = 'mysql:dbname=pc_shop; host=localhost; charset=utf8';
-  $user = 'root';
-  $password = '';
+  $dsn = 'mysql:dbname=LAA1384402-shop; host=mysql154.phy.lolipop.lan; charset=utf8';
+  $user = 'LAA1384402';
+  $password = 'work';
   $dbh = new PDO($dsn, $user, $password);
   $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 

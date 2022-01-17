@@ -31,7 +31,7 @@ var app = new Vue({
   },
   created: function() {
     //JSONを返すAPIのURL
-    var url = 'http://localhost/vue/api/category.php'
+    var url = 'https://hk-portfolio-shop.com/shop/vue/api/category.php'
     // 非同期通信でJSONを読み込む
     $.ajax({
       url : url,        // 通信先URL
